@@ -1,7 +1,6 @@
 // Home Content
 
 .home {
-
   .intro {
 
     h2 {
@@ -24,6 +23,15 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        width: 100%;
+      }
+    }
+
+    .optional {
+      @media @phone {
+        display: none;
+      }
     }
   }
 
@@ -46,6 +54,12 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      .layout(center, center, column-reverse);
+      margin: 20px 2.5%;
+      padding: 50px 0;
+    }
+
     .walk-text {
       width: 50%;
 
@@ -58,6 +72,23 @@
       }
 
       .btn {
+        .size(2rem, 0);
+        .btnColor(#222839, #fff);
+        width: 14rem;
+        border-radius: 10px;
+        font-size: 1.75rem;
+        &:hover {
+          .hover(#222839, #fff);
+        }
+        @media @phone {
+          width: 100%;
+        }
+      }
+      @media @phone {
+        width: 100%;
+        h3 {
+          margin-top: 1.5rem;
+        }
       }
     }
 
@@ -69,6 +100,11 @@
         width: 100%;
         height: auto;
         border-radius: 10px;
+      }
+
+      @media @phone {
+        width: 100%;
+        margin-left: 0
       }
     }
   }
