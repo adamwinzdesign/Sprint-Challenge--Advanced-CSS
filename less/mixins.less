@@ -1,1 +1,22 @@
 // Mixins Here
+
+.layout(@justify, @align, @direction: row) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+  flex-direction: @direction;
+}
+
+.background(@bg) {
+  background-color: @bg;
+}
+
+.size(@pad, @marg) {
+  padding: @pad;
+  margin: @marg;
+}
+
+.btnColor(@bg, @color) {
+  background-color: @bg;
+  color: @color;
+}
