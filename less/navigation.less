@@ -12,10 +12,18 @@ nav {
     width: 80%;
     .layout(space-around, center);
     margin: 1rem;
+    @media @phone {
+      width: 100%;
+    }
+
     a {
       text-decoration: none;
       font-size: 2rem;
       color: #000;
+      transition: all .5s ease-in-out;
+      &:hover {
+        transform: scale(1.5);
+      }
     }
   }
 }
